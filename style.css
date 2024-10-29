@@ -1,13 +1,12 @@
 @font-face {
   font-family: "Relaway-ExtraBold";
-  src: url("/nado_sdelat_idealno-main/fonts/Raleway-ExtraBold.woff2")
+  src: url("/nado_sdelat_idealno-main/fonts/Raleway-ExtraBold.woff2");
 }
 
 @font-face {
   font-family: "Relaway-Regular";
-  src: url("/nado_sdelat_idealno-main/fonts/Raleway-Regular.woff2")
+  src: url("/nado_sdelat_idealno-main/fonts/Raleway-Regular.woff2");
 }
-
 
 *,
 *::before,
@@ -18,7 +17,6 @@
 html {
   height: 100%;
 }
-  
 
 body {
   height: 100%;
@@ -33,46 +31,47 @@ body {
 
 video {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
   z-index: 1;
-  }
+}
 
-.zag{
+.zag {
   text-align: center;
-  z-index: 2;
-  font-size: 116px; 
-  width: 800px; 
+  z-index: 3;
+  font-size: 116px;
+  width: 800px;
   margin-bottom: 500px;
-  font-family:"Relaway-ExtraBold";
+  margin-top: 100;
+  font-family: "Relaway-ExtraBold";
   line-height: 136.18px;
   letter-spacing: 3.5%;
 }
 
-.zag::after{
-  content:"*";
+.zag::after {
+  content: "*";
 }
 
 .zag:hover::before {
   position: absolute;
-  transform:translate(25%, 90%);  
-  z-index: 1;
+  transform: translate(25%, 90%);
+  z-index: 5;
   font-size: 2vw;
   font-weight: 400;
   background-color: white;
   border: 2px black solid;
   border-bottom: 10px black solid;
   border-radius: 20px;
-  height: 160px;
-  width: 870px;
+  height: 16vh;
+  width: 45vw;
   line-height: 35px;
-  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
+  content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
   white-space: pre;
   font-family: "Relaway-Regular";
-  text-align: left; 
-  padding: 40px 20px 20px 20px;  
+  text-align: left;
+  padding: 40px 20px 20px 20px;
 }
 
 .zag::after {
@@ -81,14 +80,13 @@ video {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  z-index: 1;
+  z-index: 3;
 }
 
-.zag:hover{
+.zag:hover {
   color: rgba(76, 76, 76, 1);
 }
 
 .zag:hover + video {
   opacity: 70%;
-  
 }
